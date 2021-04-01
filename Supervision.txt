@@ -1,0 +1,16 @@
+# La supervision du cluster s'effectue via Dynatrace.
+
+## Infos : 
+Dynatrace SaaS
+Version d'essais 15 jours
+Version 1.214.83.20210329-171913
+
+
+## Mise en place de la supervision :
+- Création d'un PaaS Token sur Dynatrace
+- Création d'un API Token sur Dynatrace
+- Téléchargement et installation 
+wget https://github.com/dynatrace/dynatrace-operator/releases/latest/download/install.sh -O install.sh && sh ./install.sh --api-url "https://<ENV>.live.dynatrace.com/api" --api-token "<API TOKEN>" --paas-token "<PAAS TOKEN>"  --enable-app-log-access --enable-k8s-monitoring 
+
+
+
